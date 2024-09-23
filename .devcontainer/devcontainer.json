@@ -1,0 +1,26 @@
+{
+  "name": "Python 3",
+  "image": "ghcr.io/sirianniclassroom/bpchem:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {}
+    "ghcr.io/devcontainers/features/git:1": {
+             "version": "latest",
+             "ppa": "false"
+         },
+  },
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
+    },
+  }
+}
